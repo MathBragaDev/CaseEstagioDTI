@@ -52,7 +52,7 @@ const DroneManager = ({ system, onUpdate }) => {
           required
         />
         <Button type="submit" variant="primary" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <img src="/emojis/add.gif" alt="Adicionar" style={{ width: '16px', height: '16px' }} />
+          <img src="/emojis/camera-drone.png" alt="Adicionar" style={{ width: '16px', height: '16px' }} />
           Adicionar Drone
         </Button>
       </Form>

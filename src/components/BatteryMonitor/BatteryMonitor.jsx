@@ -42,7 +42,7 @@ const BatteryMonitor = ({ drones }) => {
             
             <div style={{ textAlign: 'right' }}>
               <div style={{ fontSize: '1rem', fontWeight: 'bold', color: getBatteryColor(drone.battery) }}>
-                <img src="/emojis/battery.gif" alt="Bateria" style={{ width: '16px', height: '16px', marginRight: '5px' }} />
+                <img src="/emojis/bateria.gif" alt="Bateria" style={{ width: '16px', height: '16px', marginRight: '5px' }} />
                 {drone.battery}%
               </div>
               <div style={{
