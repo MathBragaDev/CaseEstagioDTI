@@ -39,6 +39,7 @@ Sistema.addDrone(5, 50); // 5kg de capacidade, 50km de alcance
 Sistema.addOrder({ x: 10, y: 5 }, 2.0, 'alta');
 
 ;
+
 🏗️ Estrutura do Projeto
 text
 src/
@@ -87,6 +88,7 @@ Utilização de Frota: Otimização de recursos
 Tempo Médio: Velocidade das entregas
 
 Consumo de Bateria: Autonomia dos drones
+
 
 🤝 Contribuição
 Faça o fork do projeto
