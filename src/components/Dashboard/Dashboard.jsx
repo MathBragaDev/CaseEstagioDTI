@@ -81,8 +81,7 @@ const Dashboard = ({ system }) => {
           </ProgressBar>
         </StatCard>
       </DashboardContainer>
-
-      {/* ... resto do componente mantém a lógica, mas com classes modernas ... */}
+      
     </div>
   );
 };
