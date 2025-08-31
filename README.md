@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# 🚁 Drone Delivery System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sistema inteligente de gerenciamento e simulação de entregas por drones com interface moderna e funcionalidades avançadas.
 
-## Available Scripts
+![Dashboard](docs/images/dashboard.png)
 
-In the project directory, you can run:
+## ✨ Funcionalidades
 
-### `npm start`
+- **🎯 Gestão Inteligente de Frotas**: Cadastro e monitoramento de drones com capacidades personalizadas
+- **📦 Sistema de Pedidos Prioritários**: Entregas classificadas por urgência (alta, média, baixa)
+- **🔋 Monitoramento de Bateria**: Controle em tempo real da autonomia dos drones
+- **🔄 Simulação de Rotas**: Algoritmo otimizado para menor número de viagens
+- **📊 Dashboard Interativo**: Visualização completa de métricas e desempenho
+- **🎨 Interface Moderna**: Design responsivo com emojis animados
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: React 18 + Vite
+- **Estilização**: Styled Components
+- **Ícones**: Emojis animados (GIF/PNG)
+- **Build Tool**: Vite
+- **Desenvolvimento**: JavaScript ES6+
 
-### `npm test`
+🎮 Como Usar
+Adicione Drones: Configure a frota com capacidade e alcance
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Cadastre Pedidos: Defina localização, peso e prioridade
 
-### `npm run build`
+Simule Entregas: Execute a otimização de rotas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Monitore Resultados: Acompanhe métricas e desempenho
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Exemplo de Uso
+javascript
+// Adicionar um drone
+Sistema.addDrone(5, 50); // 5kg de capacidade, 50km de alcance
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+// Adicionar um pedido
+Sistema.addOrder({ x: 10, y: 5 }, 2.0, 'alta');
 
-### `npm run eject`
+;
+🏗️ Estrutura do Projeto
+text
+src/
+├── components/          # Componentes React
+│   ├── Dashboard/      # Painel de controle
+│   ├── DroneManager/   # Gerenciamento de drones
+│   ├── OrderManager/   # Gestão de pedidos
+│   ├── Simulation/     # Simulação de entregas
+│   └── BatteryMonitor/ # Monitor de bateria
+├── utils/              # Utilitários e classes
+│   └── dataStructures.js # Sistema principal
+└── styles.js           # Estilos e temas
+🎨 Componentes Principais
+Drone Class
+javascript
+class Drone {
+  constructor(id, capacity, distance) {
+    this.id = id;
+    this.maxCapacity = capacity;
+    this.maxDistance = distance;
+    this.battery = 100;
+    this.status = 'disponível';
+  }
+}
+Order Class
+javascript
+class Order {
+  constructor(id, location, weight, priority) {
+    this.id = id;
+    this.location = location;
+    this.weight = weight;
+    this.priority = priority; // alta, média, baixa
+  }
+}
+⚡ Scripts Disponíveis
+bash
+npm run dev      # Modo desenvolvimento
+npm run build    # Build de produção
+npm run preview  # Preview do build
+npm run lint     # Análise de código
+📊 Métricas de Desempenho
+Taxa de Entrega: Eficiência geral do sistema
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Utilização de Frota: Otimização de recursos
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Tempo Médio: Velocidade das entregas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Consumo de Bateria: Autonomia dos drones
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🤝 Contribuição
+Faça o fork do projeto
 
-## Learn More
+Crie uma branch para sua feature (git checkout -b feature/AmazingFeature)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Commit suas mudanças (git commit -m 'Add some AmazingFeature')
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Push para a branch (git push origin feature/AmazingFeature)
 
-### Code Splitting
+Abra um Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📝 Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para detalhes.
 
-### Analyzing the Bundle Size
+👨‍💻 Autor
+Matheus Braga - Seu GitHub
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🙋‍♂️ Suporte
+Para dúvidas ou sugestões, abra uma issue no GitHub.
 
-### Making a Progressive Web App
+Desenvolvido com ❤️ para o processo seletivo de estágio
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📦 Instalação
 
-### Advanced Configuration
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/drone-delivery-system.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Entre no diretório
+cd drone-delivery-system
 
-### Deployment
+# Instale as dependências
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Execute em modo desenvolvimento
+npm run dev
