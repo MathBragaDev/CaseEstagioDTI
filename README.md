@@ -2,7 +2,7 @@
 
 Sistema inteligente de gerenciamento e simulação de entregas por drones com interface moderna e funcionalidades avançadas.
 
-![Dashboard](docs/Demonstrativo.mp4)
+![Dashboard](docs/Dashboard.png)
 
 ## ✨ Funcionalidades
 
